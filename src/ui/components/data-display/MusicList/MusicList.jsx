@@ -11,10 +11,14 @@ export default function MusicList(props) {
     <ul className={styles['music-list']}>
       {
         props.musics.map((music) => (
-          <li 
-            className={[styles['music-list-item'], isSelected(music)].join(' ')}
-            onClick={props.onSelect(music)}
-          >
+          <li
+            key={music.id}
+            className={[
+                styles['music-list-item'],
+                isSelected(music),
+            ].join(' ')}
+            onClick={() => props.onSelect(music)}
+                >
             <div className={styles['information']}>
               <span className={styles['title']}>{ music.name }</span>
               <span className={styles['artist']}>{ music.artist }</span>
