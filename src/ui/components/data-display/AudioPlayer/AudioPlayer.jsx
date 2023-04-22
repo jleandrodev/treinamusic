@@ -1,6 +1,7 @@
 import { useEffect, useMemo, useRef, useState } from "react";
 import styles from "./AudioPlayer.module.css";
 import TimeLine from "../../inputs/TimeLine/Timeline";
+import { FaPlay, FaPause } from 'react-icons/fa'
 
 export default function AudioPlayer(props) {
   const [isPlaying, setIsPlaying] = useState(false);
@@ -68,7 +69,7 @@ export default function AudioPlayer(props) {
           disabled={!canPlay}
           onClick={handlePlay}
         >
-          {isPlaying ? `\u2759\u2759` : `\u25b8`}
+          {isPlaying ? <FaPause /> : <FaPlay />}
         </button>
         <TimeLine width={width} onChangeWidth={onChangeTime} />
         <audio

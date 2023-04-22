@@ -11,12 +11,19 @@
 .play-button {
   width: 50px;
   height: 50px;
+  padding: 0;
   border-radius: 50%;
   border: none;
   cursor: pointer;
   transition: 0.3s;
-  font-size: 38px;
-  margin-bottom: 16px
+  font-size: 32px;
+  color: var(--background-paper);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: auto;
+  margin-bottom: 16px;
+
 }
 
 .play-button:hover {
