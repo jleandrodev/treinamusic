@@ -15,6 +15,11 @@ Este é um projeto de um player de música desenvolvido em React, que permite ao
 -   HTML5 audio: Elemento HTML5 para reprodução de áudio.
 -   CSS: Linguagem de estilização de páginas web.
 
+
+## Link para visualização do projeto
+
+O projeto está atualmente implantado na Vercel e pode ser acessado em: [https://treinamusic.vercel.app/](https://treinamusic.vercel.app/)
+
 ## Como executar o projeto
 
 1.  Clone este repositório em sua máquina local.
@@ -22,6 +27,7 @@ Este é um projeto de um player de música desenvolvido em React, que permite ao
 3.  Execute o comando `npm install` para instalar as dependências do projeto.
 4.  Execute o comando `npm start` para iniciar o servidor local.
 5.  Abra o navegador em `http://localhost:3000` para ver o player de música em funcionamento.
+
 
 ## Considerações finais
 
