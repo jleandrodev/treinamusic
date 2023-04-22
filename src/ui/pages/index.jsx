@@ -1,4 +1,7 @@
+import { useState } from "react";
 import MusicList from "../components/data-display/MusicList/MusicList";
+import TimeLine from "../components/inputs/TimeLine/Timeline";
+
 
 const musics = [
    {
@@ -22,13 +25,20 @@ const musics = [
 ]
 
 export default function Index() {
- return(
-    <div>
-      <MusicList 
-         musics={musics} 
-         selectedMusic={musics[0]} 
-         onSelect={() => {}}
-      />
-    </div>
+
+   const [ width, setWidth ] = useState(0)
+
+   return(
+      <div>
+         <MusicList 
+            musics={musics} 
+            selectedMusic={musics[0]} 
+            onSelect={() => {}}
+         />
+         <TimeLine 
+            onChangeWidth={setWidth} 
+            width={width}
+         />
+      </div>
  ) 
 }

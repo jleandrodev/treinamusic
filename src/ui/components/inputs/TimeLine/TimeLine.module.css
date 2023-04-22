@@ -1,0 +1,30 @@
+.timeline-container {
+  background: rgba(255, 255, 255, 0.25);
+  width: 100%;
+  height: 8px;
+  border-radius: 10px;
+  overflow: hidden;
+  position: relative
+  
+}
+
+.timeline-line {
+  height: 100%;
+  width: var(--width);
+  background: var(--text-secondary);
+  border-radius: 10px;
+}
+
+.timeline-container:hover .timeline-line {
+  background: var(--primary)
+}
+
+.timeline-slider {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  opacity: 0
+
+}
