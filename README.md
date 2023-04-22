@@ -18,7 +18,7 @@ Este é um projeto de um player de música desenvolvido em React, que permite ao
 
 ## Link para visualização do projeto
 
-O projeto está atualmente implantado na Vercel e pode ser acessado em: [https://treinamusic.vercel.app/](https://treinamusic.vercel.app/)
+O projeto está atualmente implantado na Vercel e pode ser acessado em: [https://treinamusic.vercel.app/](https://treinamusic.vercel.app/){target="_blank"}
 
 ## Como executar o projeto
 
