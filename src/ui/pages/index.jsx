@@ -1,32 +1,28 @@
 import { useState } from "react";
 import MusicList from "../components/data-display/MusicList/MusicList";
-import TimeLine from "../components/inputs/TimeLine/Timeline";
+import AudioPlayer from "../components/data-display/AudioPlayer/AudioPlayer";
 
 
 const musics = [
    {
       id: 1,
-      name: 'Diammonds',
-      artist: 'Rihanna',
-      time: '95'
+      name: 'Shadowing',
+      artist: 'Abcde',
+      time: '122',
+      url: 'musics/Shadowing.mp3'
    },
    {
       id: 2,
-      name: 'Beat It',
-      artist: 'Michael Jackson',
-      time: '123'
-   },
-   {
-      id: 3,
-      name: 'Imagine',
-      artist: 'John Lennon',
-      time: '118'
+      name: 'Stoker',
+      artist: 'Fghij',
+      time: '65',
+      url: 'musics/Stoker.mp3'
    },
 ]
 
 export default function Index() {
 
-   const [ width, setWidth ] = useState(0)
+   
 
    return(
       <div>
@@ -35,10 +31,7 @@ export default function Index() {
             selectedMusic={musics[0]} 
             onSelect={() => {}}
          />
-         <TimeLine 
-            onChangeWidth={setWidth} 
-            width={width}
-         />
+         <AudioPlayer musics={musics[0]} />
       </div>
  ) 
 }
